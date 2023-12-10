@@ -33,5 +33,3 @@ let firstName = "";
 let lastName = "";
 let nickName = "Tayef";
 console.log(firstName || lastName || nickName); // "Tayef"
-
-true || console.log("print");
