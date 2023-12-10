@@ -21,3 +21,5 @@ if (hour < 10 || hour > 18 || isWeekend) {
 } else {
   console.log("The office is open.");
 }
+
+// just for testing
