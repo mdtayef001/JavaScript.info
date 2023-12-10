@@ -22,4 +22,16 @@ if (hour < 10 || hour > 18 || isWeekend) {
   console.log("The office is open.");
 }
 
-// just for testing
+// a chain of OR || returns the first truthy value or the last one if no truthy value is found
+
+console.log(1 || 0); // 1 (1 is truthy)
+console.log(null || 1); // 1 (1 is the first truthy value)
+console.log(null || 0 || 1); // 1 (the first truthy value)
+console.log(undefined || null || 0); // 0 (all falsy, returns the last value)
+
+let firstName = "";
+let lastName = "";
+let nickName = "Tayef";
+console.log(firstName || lastName || nickName); // "Tayef"
+
+true || console.log("print");
