@@ -33,3 +33,37 @@ let firstName = "";
 let lastName = "";
 let nickName = "Tayef";
 console.log(firstName || lastName || nickName); // "Tayef"
+
+// && (AND)
+// AND returns true if both operands are truthy and false otherwise
+
+console.log(true && true);
+console.log(true && false);
+console.log(false && true);
+console.log(false && false);
+
+hour = 12;
+minute = 30;
+if (hour === 12 && minute === 30) {
+  console.log("The time is 12:30");
+}
+
+if (1 && 0) {
+  console.log("True");
+} else {
+  console.log("False");
+}
+
+// if the first operand is truthy,
+// AND returns the second operand:
+console.log(1 && 0); // 0
+console.log(1 && 5); // 5
+
+// if the first operand is falsy,
+// AND returns it. The second operand is ignored
+console.log(null && 5); // null
+console.log(0 && "no matter what"); // 0
+
+console.log(1 && 2 && null && 3); // null
+
+console.log(1 && 2 && 3); // 3, the last one
