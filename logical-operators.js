@@ -67,3 +67,76 @@ console.log(0 && "no matter what"); // 0
 console.log(1 && 2 && null && 3); // null
 
 console.log(1 && 2 && 3); // 3, the last one
+
+let x = 1;
+x > 0 && console.log("Greater than zero!");
+
+if (x > 0) console.log("Greater than zero!");
+
+// !(NOT)
+// Converts the operand to boolean type: true/false
+// Returns the inverse value.
+console.log(!true);
+console.log(!0);
+
+// A double NOT !! is sometimes used for converting a value to boolean type
+// the first NOT converts the value to boolean and returns the inverse
+// the second NOT inverses it again
+
+console.log(!!"non-emty string");
+console.log(!!null);
+
+// The precedence of NOT ! is the highest of all logical operators, so it always executes first, before && or ||.
+
+console.log(null || 2 || undefined);
+
+// alert(alert(1) || 2 || alert(3));
+
+console.log(1 && null && 2);
+
+// alert(alert(1) && alert(2));
+
+console.log(null || (2 && 3) || 4);
+
+// tasks
+
+let age = 15;
+if (age >= 14 && age <= 90) {
+  console.log(`the age is : ${age}`);
+} else {
+  console.log("the age is not between 14 to 90");
+}
+
+if (!(age >= 14 && age <= 90)) {
+  console.log(`the age is not between 14 to 90 => ${age}`);
+}
+
+if (age < 14 || age > 90) {
+  console.log(age);
+}
+
+if (-1 || 0) {
+  console.log("firse");
+}
+if (-1 && 0) {
+  console.log("second");
+}
+if (null || (-1 && 1)) {
+  console.log("third");
+}
+
+const userName = prompt("Who's there?", "");
+if (userName === "Admin") {
+  const pass = prompt("Password", "");
+  if (pass === "TheMaster") {
+    alert("welcome!");
+  } else if (pass === "" || pass === null) {
+    alert("Canceled");
+  } else {
+    alert("Wrong password");
+  }
+} else if (userName === "" || userName === null) {
+  alert("Canceled");
+} else {
+  alert("I don't know you");
+}
