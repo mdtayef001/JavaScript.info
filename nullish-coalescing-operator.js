@@ -4,6 +4,3 @@
 let a = null;
 let result =
   a !== null && a !== undefined ? console.log(a) : console.log(`a is = ${a}`);
-
-console.log("fuck you");
-console.log("fuck");
