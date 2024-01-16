@@ -29,3 +29,6 @@ let hig = null;
 let wid = null;
 let area = (hig ?? 100) * (wid ?? 50);
 console.log(area);
+
+let x = (1 && 2) ?? 3;
+console.log(x);
