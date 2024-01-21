@@ -32,3 +32,9 @@ do {
 for (let i = 0; i < 3; i++) {
   console.log(i);
 }
+
+let y = 0;
+for (y = 0; y < 3; y++) {
+  console.log(y);
+}
+console.log(y);
