@@ -38,3 +38,14 @@ for (y = 0; y < 3; y++) {
   console.log(y);
 }
 console.log(y);
+
+for (; i < 3; i++) {
+  console.log(i);
+}
+
+let n = 0;
+for (; n < 3; ) {
+  console.log(n++);
+}
+
+// Breaking the loop
