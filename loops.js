@@ -49,3 +49,13 @@ for (; n < 3; ) {
 }
 
 // Breaking the loop
+
+let sum = 0;
+while (true) {
+  let value = +prompt("Enter a number", "");
+  console.log(value);
+  if (!value) break;
+  sum += value;
+}
+
+alert("Sum:" + sum);
