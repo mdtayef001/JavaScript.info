@@ -50,12 +50,27 @@ for (; n < 3; ) {
 
 // Breaking the loop
 
-let sum = 0;
-while (true) {
-  let value = +prompt("Enter a number", "");
-  console.log(value);
-  if (!value) break;
-  sum += value;
+// let sum = 0;
+// while (true) {
+//   let value = +prompt("Enter a number", "");
+//   console.log(value);
+//   if (!value) break;
+//   sum += value;
+// }
+
+// alert("Sum:" + sum);
+
+// Continue to the next iteration
+
+for (let i = 0; i < 10; i++) {
+  if (i % 2 === 0) continue;
+  console.log(i);
 }
 
-alert("Sum:" + sum);
+outer: for (let i = 0; i < 3; i++) {
+  inner: for (let j = 0; j < 3; j++) {
+    let input = prompt(`Value at coords (${i},${j})`, "");
+    if (!input) break outer;
+  }
+}
+alert("Done!");
