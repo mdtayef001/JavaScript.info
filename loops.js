@@ -67,10 +67,27 @@ for (let i = 0; i < 10; i++) {
   console.log(i);
 }
 
-outer: for (let i = 0; i < 3; i++) {
-  inner: for (let j = 0; j < 3; j++) {
-    let input = prompt(`Value at coords (${i},${j})`, "");
-    if (!input) break outer;
-  }
+// outer: for (let i = 0; i < 3; i++) {
+//   inner: for (let j = 0; j < 3; j++) {
+//     let input = prompt(`Value at coords (${i},${j})`, "");
+//     if (!input) break outer;
+//   }
+// }
+// alert("Done!");
+
+let m = 3;
+while (m) {
+  console.log(m--);
 }
-alert("Done!");
+
+let k = 0;
+while (++k < 5) console.log(k);
+
+let l = 0;
+while (l++ < 5) console.log(l);
+
+let g = 0;
+while (g < 5) {
+  console.log(g);
+  g++;
+}
