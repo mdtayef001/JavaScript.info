@@ -118,11 +118,8 @@ console.log(num);
 let N = 10;
 
 nextPrime: for (let i = 2; i <= N; i++) {
-  // console.log(i);
   for (let j = 2; j < i; j++) {
-    // console.log(j);
     if (i % j === 0) continue nextPrime;
-    // console.log(j);
   }
   console.log(i);
 }
