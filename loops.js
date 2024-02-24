@@ -91,3 +91,38 @@ while (g < 5) {
   console.log(g);
   g++;
 }
+
+for (let i = 0; i < 5; i++) console.log(i);
+for (let i = 0; i < 5; ++i) console.log(i);
+
+for (let i = 0; i <= 10; i++) {
+  if (i % 2 === 0) {
+    console.log("even number:" + i);
+  } else {
+    console.log("odd number:" + i);
+  }
+}
+
+let v = 0;
+while (v < 3) {
+  console.log(v++);
+}
+
+let num;
+do {
+  num = prompt("Enter a number greater than 100?", 0);
+} while (num <= 100 && num);
+
+console.log(num);
+
+let N = 10;
+
+nextPrime: for (let i = 2; i <= N; i++) {
+  // console.log(i);
+  for (let j = 2; j < i; j++) {
+    // console.log(j);
+    if (i % j === 0) continue nextPrime;
+    // console.log(j);
+  }
+  console.log(i);
+}
