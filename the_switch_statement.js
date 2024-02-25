@@ -28,6 +28,10 @@
 
 // +++++++++++++++++++switch++++++++++++++++++++++++
 
+// A switch statement can replace multiple if checks.
+
+// It gives a more descriptive way to compare a value with multiple variants.
+
 let a = 2 + 2;
 
 switch (a) {
