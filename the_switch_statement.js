@@ -58,3 +58,67 @@ switch (+c) {
   default:
     console.log("this doesn't run");
 }
+
+let x = 3;
+switch (x) {
+  case 4:
+    console.log("Right");
+    break;
+  case 3:
+  case 5:
+    console.log("Worng");
+    console.log("why don't take match class");
+    break;
+  default:
+    console.log("the result is strange. Really.");
+}
+
+let arg = "0";
+
+switch (arg) {
+  case "0":
+  case "1":
+    console.log("One or zero");
+    break;
+  case "2":
+    console.log("Two");
+    break;
+  case 3:
+    console.log("Never executes!");
+    break;
+  default:
+    console.log("An unknown value");
+}
+
+// +++++++++++++++Task+++++++++++++++++++
+
+let browser = "Brave";
+
+if (browser === "Edge") {
+  console.log("You Have got the Edge!");
+} else if (
+  browser === "Chrome" ||
+  browser === "FireFox" ||
+  browser === "Safari" ||
+  browser === "Opera"
+) {
+  console.log("Okey we support these browers too");
+} else {
+  console.log("We hope this page looks good");
+}
+
+let l = 1;
+switch (l) {
+  case 0:
+    console.log(0);
+    break;
+  case 1:
+    console.log(1);
+    break;
+  case 2:
+  case 3:
+    console.log("2, 3");
+    break;
+  default:
+    console.log("Doesn't match");
+}
