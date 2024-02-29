@@ -95,12 +95,58 @@ function doNothing() {
 console.log(doNothing() === undefined);
 
 function showPrimes(n) {
-  nextPrime: for (let i = 2; i < n; i++) {
-    for (let j = 2; j < i; j++) {
-      if (i % j == 0) continue nextPrime;
-    }
-
-    console.log(i); // a prime
+  for (let i = 2; i < n; i++) {
+    if (!isPrime(i)) continue;
+    console.log(i);
   }
 }
+
+function isPrime(n) {
+  for (let i = 2; i < n; i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
 showPrimes(10);
+
+// ++++++++++++++++++++++++++++++++++task+++++++++++++++++++++
+
+function check_age(age) {
+  if (age > 18) {
+    return true;
+  }
+  //  else {
+  //   return console.log("Did parents allow you?");
+  // }
+  return "Did parents allow you?";
+}
+console.log(check_age(20));
+
+function check_Age(age) {
+  return age > 18 ? true : "did parents allow you?";
+}
+
+console.log(check_Age(10));
+
+function checK_age(age) {
+  return age > 18 || "did parent allow you?";
+}
+
+console.log(checK_age(20));
+
+let x = 3;
+let n = 4;
+
+if (n < 1) {
+  console.log(`Power ${n} is not supported, use a positive integer`);
+} else {
+  console.log(pow(x, n));
+}
+
+function pow(x, n) {
+  let result = x;
+  for (let i = 1; i < n; i++) {
+    result *= x;
+  }
+  return result;
+}
