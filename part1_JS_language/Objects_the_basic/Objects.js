@@ -118,3 +118,8 @@ for (const key in userS) {
 }
 
 // ++++++++++++++++++++++++++++++++++taks+++++++++++++++++++++++++++++
+
+const Fuck = {
+  why: false,
+  havingFun: true,
+};
