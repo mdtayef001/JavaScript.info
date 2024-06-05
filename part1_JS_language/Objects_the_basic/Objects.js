@@ -118,11 +118,3 @@ for (const key in userS) {
 }
 
 // ++++++++++++++++++++++++++++++++++taks+++++++++++++++++++++++++++++
-
-const Fuck = {
-  why: false,
-  havingFun: true,
-  who: "i don't know",
-  fuck: "yes",
-  hi: "hi",
-};
