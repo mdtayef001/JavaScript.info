@@ -117,6 +117,4 @@ for (const key in userS) {
   console.log(key);
 }
 
-history;
-
 // ++++++++++++++++++++++++++++++++++taks+++++++++++++++++++++++++++++
