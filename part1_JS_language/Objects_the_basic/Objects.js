@@ -123,4 +123,5 @@ const Fuck = {
   why: false,
   havingFun: true,
   who: "i don't know",
+  fuck: "yes",
 };
